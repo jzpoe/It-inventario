@@ -33,7 +33,7 @@ console.log(envioDatos);
 
     const handleSubmit = async () => {
       try {
-        fetch('http://localhost:3000/enviar', {
+        fetch('https://it-inventario-backend.vercel.app/enviar', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

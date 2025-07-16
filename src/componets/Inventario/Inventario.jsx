@@ -66,7 +66,7 @@ export const Inventario = () => {
 
     const cambio = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3000/inventario/cambio/${id}`, {
+            const response = await fetch(`https://it-inventario-backend.vercel.app/inventario/cambio/${id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
             });

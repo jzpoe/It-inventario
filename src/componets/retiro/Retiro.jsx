@@ -9,7 +9,7 @@ export const Retiro = () => {
     console.log("Estado inicial:", retiros);
 
     useEffect(() => {
-        fetch('http://localhost:3000/inventario/retiro')
+        fetch('https://it-inventario-backend.vercel.app/inventario/retiro')
             .then(res => res.json())
             .then(data => {
                 console.log("Datos recibidos del backend:", data);

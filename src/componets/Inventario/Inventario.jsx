@@ -14,26 +14,18 @@ export const Inventario = () => {
     const [busqueda, setBusqueda]= useState('')
 
 
-    useEffect(() => {
-        fetch('https://it-inventario-backend.vercel.app/obtener')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Error en la solicitud: ' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(data => {
-                setDatos(data);
-                setLoading(false);
-            })
-            .catch(error => {
-                console.error('Error al obtener los datos:', error);
-                setLoading(false);
-            });
-
-
-
-    }, []);
+   useEffect(() => {
+  fetch('https://it-inventario-backend.vercel.app/obtener?page=1&limit=50')
+    .then(res => res.json())
+    .then(data => {
+      setDatos(data.items);
+      setLoading(false);
+    })
+    .catch(error => {
+      console.error('Error al obtener los datos:', error);
+      setLoading(false);
+    });
+}, []);
 
     const retiro = async (id) => {
 

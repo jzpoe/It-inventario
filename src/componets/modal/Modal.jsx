@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import './Modal.css';
+import './modal.css';
 
 export const Modal = ({ mostrarModal, cerrarModal, onAceptar  }) => {
 

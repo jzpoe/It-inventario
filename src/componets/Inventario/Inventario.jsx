@@ -15,8 +15,7 @@ export const Inventario = () => {
 
 
     useEffect(() => {
-
-        fetch('https://it-inventario-backend-d0w89i05t-jzpoes-projects.vercel.app/obtener')
+        fetch('https://it-inventario-backend.vercel.app/obtener/obtener')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Error en la solicitud: ' + response.statusText);

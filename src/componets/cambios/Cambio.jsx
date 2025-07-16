@@ -10,7 +10,7 @@ export const Cambio = () => {
 
   useEffect(() => {
 
-    fetch('https://it-inventario-backend.vercel.app/inventario/cambio')
+    fetch('https://it-inventario-backend-d0w89i05t-jzpoes-projects.vercel.app/inventario/cambio')
       .then(res => res.json())
       .then(data => {
         console.log("Datos recibidos del backend:", data);

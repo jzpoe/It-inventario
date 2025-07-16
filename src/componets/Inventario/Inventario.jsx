@@ -16,7 +16,7 @@ export const Inventario = () => {
 
     useEffect(() => {
 
-        fetch('https://it-inventario-backend.vercel.app/obtener')
+        fetch('https://it-inventario-backend-d0w89i05t-jzpoes-projects.vercel.app/obtener')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Error en la solicitud: ' + response.statusText);
@@ -41,7 +41,7 @@ export const Inventario = () => {
         
 
         try {
-            const response = await fetch(`http://localhost:3000/retiro/${id}`, {
+            const response = await fetch(`https://it-inventario-backend-d0w89i05t-jzpoes-projects.vercel.app/retiro/${id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
             });
@@ -66,7 +66,7 @@ export const Inventario = () => {
 
     const cambio = async (id) => {
         try {
-            const response = await fetch(`https://it-inventario-backend.vercel.app/inventario/cambio/${id}`, {
+            const response = await fetch(`https://it-inventario-backend-d0w89i05t-jzpoes-projects.vercel.app/inventario/cambio/${id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
             });

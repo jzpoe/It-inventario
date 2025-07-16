@@ -1,0 +1,53 @@
+.inventario-envio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+
+.content-inventario{
+
+ background-color: rgb(20, 20, 73);
+  padding: 10px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px #fff;
+  max-width: 1200px;
+  width: 100%;        
+
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.form-row{
+   display: flex;
+    flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #f3f2f2;
+}
+
+.form-row input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-row input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+

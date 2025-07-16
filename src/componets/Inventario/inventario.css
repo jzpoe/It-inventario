@@ -1,0 +1,85 @@
+.inventario-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(2, 2, 56);
+}
+
+.inventario {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card-inventario-container {
+  width: 100%;
+  background-color: rgba(19, 46, 1, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.card-inventario-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-inventario-container p {
+  margin: 4px 0;
+  color: #fff;
+}
+
+.card-inventario-container strong {
+  color: #fff;
+}
+
+.form-row label {
+  width: 40%;
+  text-align: right;
+  font-weight: bold;
+}
+
+.form-row input {
+  width: 60%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-submit{
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: darkgreen;
+}
+
+@media (max-width: 768px) {
+  .content-inventario {
+    grid-template-columns: 1fr; /* Solo una columna */
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-row label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .form-row input {
+    width: 100%;
+  }
+}

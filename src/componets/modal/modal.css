@@ -1,0 +1,69 @@
+.container-modal{
+width: 100%;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.5);
+position: fixed;
+top: 0;
+left: 0;
+display: grid;
+place-items: center;
+}
+
+.contenido-modal{
+background-color: rgb(255, 254, 255);
+width: 50%;
+min-width: 400px;
+border-radius: 10px;
+position: relative;
+padding: 1rem;
+}
+.contenido-modal p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+}
+
+.closed-modal{
+    background-color: rgba(0, 0, 0, 0.712);
+    position: absolute;
+top: 0;
+right  : 0;
+margin: .5rem;
+}
+
+.closed-modal:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.botones-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.boton-aceptar {
+    background-color: rgb(23, 7, 170);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    margin: .5rem;
+}
+
+.boton-cancelar{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    margin: .5rem;
+}
+
+.boton-aceptar:hover,
+.boton-cancelar:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

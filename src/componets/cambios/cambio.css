@@ -1,0 +1,32 @@
+.inventario-cambio{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(2, 2, 56);
+
+}
+
+.cambios{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card-cambio-container{
+    width: 100%;
+    background-color: rgba(1, 4, 46, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #fff;
+    box-sizing: border-box;
+}
+.card-cambio-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.card-cambio-container p {
+    margin: 4px 0;
+    color: #fff;
+}
